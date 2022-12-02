@@ -113,7 +113,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 ## Contact
 
-Jim Kelly
+Pat Kelly
 
 Project Link: [https://github.com/prandell/advent-of-code-2022](https://github.com/prandell/advent-of-code-2022)
 
