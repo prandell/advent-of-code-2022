@@ -1,4 +1,4 @@
-# Day 1: Calorie Counting 
+# Day 1: Calorie Counting
 
 ## Problem Statement
 
@@ -30,6 +30,7 @@ For example, suppose the Elves finish writing their items' Calories and end up w
 
 10000
 ```
+
 This list represents the Calories of the food carried by five Elves:
 
 - The first Elf is carrying food with 1000, 2000, and 3000 Calories, a total of 6000 Calories.
@@ -44,7 +45,11 @@ In case the Elves get hungry and need extra snacks, they need to know which Elf 
 
 Find the Elf carrying the most Calories. How many total Calories is that Elf carrying?
 
-* Answer is 73211
+<details>
+  <summary>Spoiler: Answer</summary>
+  The answer is `73211`
+</details>
+<br/>
 
 ## Part Two
 
@@ -56,10 +61,16 @@ In the example above, the top three Elves are the fourth Elf (with 24000 Calorie
 
 Find the top three Elves carrying the most Calories. How many Calories are those Elves carrying in total?
 
+<details>
+  <summary>Spoiler: Answer</summary>
+  The answer is `213958`
+</details>
+<br/>
 
 ## Usage
 
 Setup:
+
 ```
 pipenv install
 pipenv shell
@@ -72,6 +83,6 @@ Run tests:
 
 ```
 pytest -vv
-# or to run continuously 
+# or to run continuously
 ptw -- -vv
 ```
