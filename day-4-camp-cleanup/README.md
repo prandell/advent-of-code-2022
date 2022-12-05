@@ -73,5 +73,6 @@ Setup:
 ```
 npm install
 npm install -g ts-node-esm
-ts-node-esm solution.ts
+ts-node-esm solution.ts OR
+ts-node --esm solution.ts
 ```
