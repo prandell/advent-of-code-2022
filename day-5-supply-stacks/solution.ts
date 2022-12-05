@@ -40,8 +40,7 @@ for await (const line of lineReader) {
   const trimmed = line.trim();
   const [amount, from, to] = trimmed.split("-").map((s) => parseInt(s));
   for (let i = 0; i < amount; i++) {
-    const popped = initialStacks[from].pop();
-    initialStacks[to].push(popped as string);
+    initialStacks[to].push(initialStacks[from].pop() as string);
   }
 }
 console.log("Part 1: ", initialStacks);
@@ -64,8 +63,7 @@ lineReader = await getLineReader();
 for await (const line of lineReader) {
   const trimmed = line.trim();
   const [amount, from, to] = trimmed.split("-").map((s) => parseInt(s));
-  const popped = initialStacks2[from].splice(-amount);
-  initialStacks2[to].push(...popped);
+  initialStacks2[to].push(...initialStacks2[from].splice(-amount));
 }
 
 console.log("Part 2: ", initialStacks2);
