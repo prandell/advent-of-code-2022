@@ -16,30 +16,6 @@ async function getLineReader() {
 
 let lineReader = await getLineReader();
 
-type fileType = { [dirname: string]: number };
-type dirType = { [dirname: string]: number | any };
-
-const scanDirectoriesForFolder = (
-  dirname: string,
-  directory: dirType
-): dirType | undefined => {
-  const rootkeys = Object.keys(directory);
-  for (let k of rootkeys) {
-    if (k === dirname) {
-      return directory[k];
-    }
-    if (typeof directory[k] === "number") {
-      continue;
-    } else {
-      const foundDirectory = scanDirectoriesForFolder(dirname, directory[k]);
-      if (foundDirectory) {
-        return foundDirectory;
-      } else {
-        continue;
-      }
-    }
-  }
-};
 
 const fileSizes: { [path: string]: number } = {};
 const dirsPath = new Set();
