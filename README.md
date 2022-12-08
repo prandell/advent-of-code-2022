@@ -25,7 +25,7 @@
     <img src="logo.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">project_title</h3>
+<h3 align="center">Advent of Code 2022</h3>
 
   <p align="center">
     A repository containing my solutions to the Advent of Code 2022. An Advent calendar of small programming puzzles.
@@ -113,7 +113,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 ## Contact
 
-Pat Kelly
+Pat Randell
 
 Project Link: [https://github.com/prandell/advent-of-code-2022](https://github.com/prandell/advent-of-code-2022)
 
