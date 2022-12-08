@@ -72,6 +72,7 @@ _advent calendar_ is accessible from the [Advent of Code 2022](https://adventofc
 ### Built With
 
 - [Python3](https://www.python.org/)
+- [Typescript](https://www.typescriptlang.org/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
