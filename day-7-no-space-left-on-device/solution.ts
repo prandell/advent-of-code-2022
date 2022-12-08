@@ -16,11 +16,10 @@ async function getLineReader() {
 
 let lineReader = await getLineReader();
 
-
 const fileSizes: { [path: string]: number } = {};
 const dirsPath = new Set();
 let path: string[] = [];
-//Part 1 - popping and pushing from source to destination one at a time
+
 for await (const lineRaw of lineReader) {
   const line = lineRaw.trim();
 
@@ -80,7 +79,6 @@ const toRemove =
       sum += size;
       return sum;
     }, 0));
-console.log(toRemove);
 
 console.log(
   "Part 2: ",
